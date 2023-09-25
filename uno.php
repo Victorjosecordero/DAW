@@ -10,7 +10,7 @@
     <?php 
 
         $nom="clase";
-        echo 'Hola mundo ' . $nom;
+        echo 'Hola mundo que tal  ' . $nom;
     
     ?>
 </body>
