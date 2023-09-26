@@ -1,0 +1,1 @@
+alert("Estoy usando un archivo JS");
