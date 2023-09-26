@@ -10,6 +10,7 @@
         document.write("<h3>ARRAYS</h3>");
         
         var valores= [true,5,false,"hola","adios",2];
+        var prueba;
         document.write("<p> valores "+ valores[0]+"</p>");
         document.write("<p> valores "+ valores[1]+"</p>");
 
@@ -18,15 +19,17 @@
 
         //Utiliza operadores como quieras de este array
 
-        valores[1]= ++(valores[1]);
+        valores[1]= ++valores[1];
         document.write("<p> valores "+ valores[1]+"</p>");
-        valores[1]= ++(valores[1]);
+        valores[1]= --valores[1];
         document.write("<p> valores "+ valores[1]+"</p>");
-        valores[1]= ++(valores[1]);
-        document.write("<p> valores "+ valores[1]+"</p>");
-        valores[1]= ++(valores[1]);
-        document.write("<p> valores "+ valores[1]+"</p>");
-        valores[1]= ++(valores[1]);
+        valores[3] += valores[4];
+        document.write("<p> valores "+ valores[3]+"</p>");
+        prueba= valores[0] || valores[2];
+        document.write("<p> valores "+ prueba+"</p>");
+        prueba= valores[0] && valores[2];
+        document.write("<p> valores "+ prueba+"</p>");
+        valores[1]= ++valores[1];
         document.write("<p> valores "+ valores[1]+"</p>");
         
     </script>
