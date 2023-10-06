@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <script type="text/javascript">
+
+
+        /*document.write("<h3>Ejercicio de funciones</h3>");
+
+        var nombre= window.prompt("Introduce su nombre: ");
+        document.write("<h2> Bienvenido </h2>" + nombre);
+
+        function mensaje(){
+            document.write("<h2> Bienvenido </h2>" + nombre);
+        }
+        mensaje();
+
+        for(var i=0;i<5;i++){
+            mensaje();
+        }*/
+        function pasoPorValor(miParametro){
+            miParametro =32;
+            document.write("<br> he cambiado de valor a 32");
+        }
+        
+        var miVariable=5;
+
+        pasoPorValor(miVariable);
+        document.write("<br> el valor de mi variable es: " + miVariable);
+
+        function calculaPrecioTotal(precio){
+            let impuestos= 1.16;
+            let gastosEnvio= 10;
+            return (precio * impuestos) + gastosEnvio;
+        }
+
+        let precioTotalCalculo= calculaPrecioTotal(23.24);
+        document.write("<br> el precio total es " + precioTotalCalculo);
+        document.write("<br> el precio total es " + calculaPrecioTotal(23.34));
+
+
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

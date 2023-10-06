@@ -33,8 +33,13 @@
     echo "<p>". round(5.49219786890,1) . "</p>";
     echo "<p>". round(5.589689756789,2) . "</p>";
     
-    
-    
+    //(base * altura) /2---- pi * r2
+    $baseTriangulo=32.186;
+    $alturaTriangulo=56.567398;
+    $radioCirculo=12.786;
+
+    echo "<p>El area del triangulo es ". round(($baseTriangulo*$alturaTriangulo)/2,2) . "</p>";
+    echo "<p>El area del circulo es ". round(pi() * pow($radioCirculo,2),2)  . "</p>";
     ?>
 </body>
 </html>
