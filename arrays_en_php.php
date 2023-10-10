@@ -92,6 +92,53 @@
         }
         echo "<br>";
     }
+
+
+
+    echo "<h2>ARRAY BIDIMENSIONAL</h2>";
+
+
+    $coches=array(
+        array("Modelo","Matricula","Precio"),
+        array("Mercedes","3030GHT",50000),
+        array("BMW","1265BBA",70000),
+        array("FIAT","2727EFD",15000),
+        array("Peugot","8054CMU",13000)
+    );
+
+    echo "<table border=1px>";
+    for($i=0;$i < count($coches);$i++){
+        echo "<tr>";
+        for($j=0;$j < count($coches[$i]);$j++){
+            echo "<td>";
+            echo $coches[$i][$j];
+            echo "</td>";
+        }
+        echo "</tr>";
+    }
+    echo "</table>";
+
+
+
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+
+    echo "<table border=1px>";
+    foreach($coches as $filas){
+        echo "<tr>";
+        foreach($filas as $columnas){
+            echo "<td>";
+            echo $columnas;
+            echo "</td>";
+        }
+        echo "</tr>";
+    }
+    echo "</table>";
+
+
+
+
     ?>
 </body>
 </html>

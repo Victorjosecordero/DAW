@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fechas</title>
+
+    <script>
+      document.write("<h3>Fechas</h3>");
+
+      let fech = new Date();
+
+      document.write("<p>La fecha es: " + fech + "</p>");
+      document.write("<p>dia: " + fech.getDate() + "</p>");
+      document.write("<p>mes: " + fech.getMonth() + "</p>");
+      document.write("<p>año: " + fech.getYear() + "</p>");
+
+      document.write("<p>Hora: " + fech.getHours() + "</p>");
+      document.write("<p>Minutos: " + fech.getMinutes() + "</p>");
+      document.write("<p>Segundos: " + fech.getSeconds() + "</p>");
+
+      document.write("<p>Dia de la semana: " + fech.getDay() + "</p>");
+
+      document.write("<p>Año completo: " + fech.getFullYear() + "</p>");
+
+      document.write("<p>Milisegundos: " + fech.getTime() + "</p>");
+
+      let fech3 = new Date(2022, 10, 28, 12, 30);
+
+      document.write("<p>La fecha es: " + fech3 + "</p>");
+      fech3.setFullYear(2023);
+      fech3.setMonth(6);
+      fech3.setDate(17);
+
+      let dias = [
+        "domingo",
+        "lunes",
+        "martes",
+        "miercoles",
+        "jueves",
+        "viernes",
+        "sabado",
+      ];
+
+      let meses = [
+        "enero",
+        "febrero",
+        "marzo",
+        "abril",
+        "mayo",
+        "junio",
+        "julio",
+        "agosto",
+        "septiembre",
+        "octubre",
+        "noviembre",
+        "diciembre",
+      ];
+
+      let dia, mes, diaNum, anio, hora, minutos;
+
+      let fecha = new Date();
+
+      diaNum = fecha.getDay();
+      dia = dias[diaNum];
+
+      mes = meses[fecha.getMonth()];
+
+      anio = fecha.getFullYear();
+
+      let salida =
+        "Hoy es " +
+        dia +
+        ", " +
+        fecha.getDate() +
+        " de " +
+        mes +
+        " de " +
+        anio +
+        ".";
+      document.write(salida);
+
+
+      
+    </script>
+  </head>
+  <body></body>
+</html>
