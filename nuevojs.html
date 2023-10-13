@@ -11,7 +11,63 @@
             mi_array_1[i-1]=i*3;
         }
 
-        
+        var array4=[1,2,3];
+        document.write("<br>el array es  " + array4);
+
+        var ultimo = array4.pop();
+
+        document.write("<br>el array es  " + ultimo);
+
+        //añado un elemento
+
+        array4.push(88);
+        document.write("<br>Añado un elemento al final de un array  " + array4);
+
+
+        var primero=array4.shift();
+        document.write("<br>el primer elemento es:  " + primero);
+
+
+        //añado al principio
+
+        array4.unshift(333);
+        document.write("<br>el primer elemento añadido es:  " + array4);
+
+        //reverse
+
+        array4.reverse();
+        document.write("<br>array REVERSE:  " + array4);
+
+        //ordenacion
+        document.write("<br>Metodos para ordenar");
+
+        let miarray=["Sevilla","Cordoba","Malaga"];
+
+        miarray.sort();
+        document.write("<br>array orden alfabetico: " + miarray);
+
+        let miarr1=[3,10,2];
+        miarr1.sort();
+        document.write("<br>array orden alfabetico: " + miarr1);
+
+
+        miarr1.sort(function(a,b){return a-b});
+        document.write("<br>array orden alfabetico: " + miarr1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
 </head>
 <body>
